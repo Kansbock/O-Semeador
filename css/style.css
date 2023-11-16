@@ -1,0 +1,47 @@
+body {
+    font-size: 1em;
+    font-family: "Zabal DEMO";
+    font-weight: 500;
+    color: #002653;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+  header {
+    align-items: center;
+  }
+  .header img {
+    width: 150px;
+  }
+  h1 {
+    color: #002653;
+    font-family: "Zabal DEMO";
+    font-weight: 1000;
+  }
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.8em;
+    }
+  }
+  .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+    }
+    .links > a {
+      color: white;
+  }
+    p {
+      text-indent: 2em;
+    }
+    @media (min-width: 1200px) {
+      img.img-fluid {
+          width: 566px;
+          height: 416px;
+      }
+  }
+  
+  
+  
