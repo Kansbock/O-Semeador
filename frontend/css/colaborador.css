@@ -1,0 +1,58 @@
+#nome {
+    width: 475px;
+    height: auto;
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 25px;
+    color: #FF5C00;
+}
+#titulo {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: #002653;
+}
+#linha {
+    width: 81px;
+    height: 4px;
+    left: 0px;
+    top: 78px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#usuarioLoginInput {
+    width: 300px;
+    height: 63.75px;
+    background: #FFFFFF;
+    border: 2px solid #440099;
+    transition: 0.5s;
+}
+#passwordLoginInput{
+    width: 300px;
+    height: 63.75px;
+    background: #FFFFFF;
+    border: 2px solid #440099;
+    transition: 0.5s;
+}
+#loginbotao {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #440099;
+    border: 3px solid #002653;
+    
+}
+#barra {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.10);
+}
+.erro {
+    transition: 0.5s;
+}

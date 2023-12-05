@@ -1,0 +1,58 @@
+#nome {
+    width: 475px;
+    height: auto;
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 25px;
+    color: #FF5C00;
+}
+#barra {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.10);
+}
+#titulo {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: #002653;
+}
+#linha {
+    width: 81px;
+    height: 4px;
+    left: 0px;
+    top: 78px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#idInput {
+    width: 250px;
+    height: 63.75px;
+    background: #FFFFFF;
+    border: 2px solid #440099;
+    transition: 0.5s;
+}
+#botao {
+    box-sizing: border-box;
+    width: 63.75px;
+    height: 63.75px;
+    background: #440099;
+    border: 1px solid #440099;
+    transition: 0.5s;
+}
+#aluno {
+    width: auto;
+    height: auto;
+    background: #D9D9D9;
+    border-radius: 73px;
+}
+.lupa {
+    width: 40px;
+}
+.quadrado {
+    width: auto;
+    height: auto;
+    background: #D9D9D9;
+    border-radius: 73px;
+  }

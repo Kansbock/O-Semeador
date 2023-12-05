@@ -7,6 +7,7 @@ const buscarAluno = async () => {
     let alunoId = alunoIdInput.value
     let localizacao = document.querySelector('.quadrado')
     let erroLocalizacao = document.querySelector('.erro')
+    let botao = document.querySelector('#botao')
     if (alunoId) {
         try{
             let erro = 1
@@ -32,9 +33,9 @@ const buscarAluno = async () => {
                                     ">${aluno.nome}</h1>
                                     <main class="">
                                         <h3 id="informacoes">ID: ${aluno.id}</h3>
-                                        <h3 id="informacoes">Turma: ${aluno.turma}</h3>
-                                        <h3 id="informacoes">Endereço: ${aluno.endereco}</h3>
-                                        <h3 id="informacoes">CPF: ${aluno.cpf}</h3>
+                                        <h3 class="mt-3" id="informacoes">Turma: ${aluno.turma}</h3>
+                                        <h3 class="mt-3" id="informacoes">Endereço: ${aluno.endereco}</h3>
+                                        <h3 class="mt-3" id="informacoes">CPF: ${aluno.cpf}</h3>
                                     </main>
                                 </main>
                             </main>`;
@@ -42,17 +43,27 @@ const buscarAluno = async () => {
             }
             if (erro === 1){
                 erroLocalizacao.innerHTML ='<img class="col-2 p-0" src="imagens/erro.png" alt="erro" style="width: 40px;">' +
-        '<h3 class="col-9" style="color: red;">ID incorreto</h3>';
+                '<h3 class="col-9" style="color: red;">ID incorreto</h3>';
+                alunoIdInput.style.border = '2px solid red';
+                botao.style.border = '2px solid red';
+                botao.style.background = 'red';
             }
         }
         catch {
             erroLocalizacao.innerHTML ='<img class="col-2 p-0" src="imagens/erro.png" alt="erro" style="width: 40px;">' +
-        '<h3 class="col-9" style="color: red;">Erro de Conexão</h3>';
+            '<h3 class="col-9" style="color: red;">Erro de Conexão</h3>';
+            alunoIdInput.style.border = '2px solid red';
+            botao.style.border = '2px solid red';
+            botao.style.background = 'red';
         }
     }
     else {
         erroLocalizacao.innerHTML ='<img class="col-2 p-0" src="imagens/erro.png" alt="erro" style="width: 40px;">' +
         '<h3 class="col-9" style="color: red;">Preencha os campos!</h3>';
+        alunoIdInput.style.border = '2px solid red';
+        botao.style.border = '2px solid red';
+        botao.style.background = 'red';
+
     }
 }
 const fazerLogin = async () => {
@@ -73,22 +84,13 @@ const fazerLogin = async () => {
             console.log(error)
             erro.innerHTML ='<img class="col-2 p-0" src="imagens/erro.png" alt="erro" style="width: 40px;">' +
         '<h3 class="col-9" style="color: red;">Senha ou ID incorretos</h3>';
+        usuarioLoginInput.style.border = '2px solid red';
+        passwordLoginInput.style.border = '2px solid red';
         }
     } else {
         erro.innerHTML ='<img class="col-2 p-0" src="imagens/erro.png" alt="erro" style="width: 40px;">' +
         '<h3 class="col-9" style="color: red;">Preencha os campos!</h3>';
+        usuarioLoginInput.style.border = '2px solid red';
+        passwordLoginInput.style.border = '2px solid red';
     }
-}
-let radio = document.querySelector('.manual-btn')
-let cont = 1
-document.getElementById('radio1').checked = true
-setInterval(() => {
-    proximaImg()
-}, 5000)
-function proximaImg() {
-    cont++
-    if(cont > 3){
-        cont = 1
-    }
-    document.getElementById('radio'+ cont).checked = true
 }

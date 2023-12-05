@@ -1,0 +1,114 @@
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}  
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+.slider-content input{
+    display: none;
+}
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 43%;
+    display:  flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #FF5C00;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #FF5C00;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #FF5C00;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #FF5C00;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #FF5C00;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+#titulo{
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: #002653;
+}
+#linha{
+    width: 140px;
+    height: 5px;
+    left: 7px;
+    top: 67px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#linha2 {
+    width: 81px;
+    height: 5px;
+    left: 16px;
+    top: 44px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#texto {
+    max-width: 100%;
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+#paragrafo {
+    text-indent: 2em;
+}
+#botao {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 25px;
+    color: #FF5C00;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#botao:hover{
+    font-size: 40px;
+}
+.parceiros {
+    font-size: 20px;
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    color: #002653;
+    padding-top: 2%;
+  }

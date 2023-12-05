@@ -2,277 +2,182 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>O Semeador Escola Metodista - AMAS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-        a {
-            text-decoration: none;
-            color: #002653;
-        }
-    </style>
+    <link rel="stylesheet" href="css/allpages.css">
+    <link rel="stylesheet" href="css/escola.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="container-fluid navbar navbar-expand-xl navbar-light">
-      <a class=" navbar-brand" href="homePage.html" style="margin-right: 50px;">
-          <img src="imagens/logo.png" style="width: 164px; height: 115px;" alt="Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class=" collapse navbar-collapse text" id="navbarSupportedContent">
-          <ul class="abas navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="homePage.html" style="color: #002653; ">Início</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="escola.html" style="color: #008AFF;">Escola</a>
-              </li>
-              <li class="nav-item">
-                  <a class=" nav-link" href="ensino.html" style="color: #002653;">Ensino</a>
-              </li>
-              <li class="nav-item">
-                  <a class=" nav-link" href="voluntario.html" style="color: #002653;">Voluntário</a>
-              </li>
-              <li class="nav-item">
-                  <a class=" nav-link" href="doacoes.html" style="color: #002653;">Doações</a>
-              </li>
-              <li class="nav-item">
-                  <a class=" nav-link" href="matricula.html" style="color: #002653;">Matrícula</a>
-              </li>
-              <li class="nav-item">
-                <a class=" nav-link" href="contato.html" style="color: #002653;">Fale Conosco</a>
-            </li>
-              <li class="nav-item">
-                  <a class=" item nav-link" href="colaborador.html" style="color: #002653;">Colaborador</a>
-              </li>
-          </ul>
+    <!-- Abas -->
+    <nav class="container-fluid navbar navbar-expand-xxl navbar-light">
+        <a class="navbar-brand" href="homePage.html" id="linkLogo">
+            <img id="logo" src="imagens/logo.png" alt="Logo O Semeador 50 anos">
+        </a>
+        <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id=" navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="homePage.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abaAtual" class="nav-link" href="escola.html">Escola</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="ensino.html">Ensino</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="voluntario.html">Voluntário</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="doacoes.html">Doações</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="matricula.html">Matrícula</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a id="abas" class="nav-link" href="colaborador.html">Área Restrita</a>
+                </li>
+            </ul>
         </div>
-        <nav class="ps-5 pe-5 col-1 d-flex justify-content-center align-content-center d-none d-xl-flex">
-          <a href="https://www.facebook.com/escolaosemeador/?locale=pt_BR"><img src="imagens/face.png" alt="Facebook" style="width: 40px;"></a>
-          <a href="https://www.instagram.com/metodistaosemeador/"><img class="" src="imagens/insta.png" alt="Instagram" style="width: 40px;"></a>
+        <nav class="ms-5 me-5 col-1 d-flex justify-content-center align-content-center d-none d-xxl-flex">
+            <a href="https://www.facebook.com/escolaosemeador/?locale=pt_BR">
+                <img id="sociais" src="imagens/face.png" alt="Ícone do Facebook">
+            </a>
+            <a href="https://www.instagram.com/metodistaosemeador/">
+                <img id="sociais" src="imagens/insta.png" alt="Ícone Instagram">
+            </a>
         </nav>
-  </nav>
-    <main class="col-12 pt-5 ps-5" style="max-width: 100%;">
-        <h1 class="texto col-12 pb-2" style="
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 900;
-          font-size: 48px;
-          line-height: 30px;
-          color: #002653;
-          ">Nossa história:</h1>
-        <main class="Linha" style="
-          width: 221px;
-          height: 5px;
-          left: 0px;
-          top: 78px;
-          background: linear-gradient(225deg, #440099 0%, #440099 100%);
-        "></main>
+    </nav>
+    <!-- Fim das abas -->
+    <!-- Corpo da página -->
+    <main class="container-sm">
+        <div class="mt-5">
+            <h1 id="titulo">Nossa história:</h1>
+            <div id="linha"></div>
+        </div>
+        <div class="row mt-5 mb-5 d-flex align-items-center">
+            <div class="col-xl-6" id="texto">
+                <p id="paragrafo">Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente, sem fins lucrativos que atende crianças e adolescentes com deficiência intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade. Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do Espectro Autista).</p>
+                <p id="paragrafo">Nosso trabalho se baseia nas diversas formas de linguagem, usando educação, arte, tecnologia, cultura e o lúdico como estratégias para prover o aprendizado, desenvolvimento e formação dos alunos.</p>
+            </div>
+            <div class="col-xl-6 d-flex justify-content-center align-content-center">
+                <img class="img-fluid" src="imagens/equipe.png" alt="Imagem da equipe da instituição O Semeador">
+            </div>
+        </div>
+        <div class="mt-5">
+            <h1 id="titulo">Projetos:</h1>
+            <div id="linha2"></div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-6 d-flex justify-content-center align-content-center">
+                <img class="img-fluid col-xxl-8" src="imagens/projeto1.png" alt="Imagem de um aluno mexendo na terra.">
+            </div>
+            <div class="row col-xl-6 mt-5 mb-5 d-flex align-content-center justify-content-center">
+                <h1 id="subtitulo" class="mb-5 d-flex justify-content-center">
+                    Interação com a natureza:
+                </h1>
+                <div id="texto">
+                    <p  id="paragrafo">Para trabalhar o terceiro elemento, a terra, a Professora Isabela trouxe como proposta a montagem de um terrário! As alunas puderam manusear um pouco da terra observando sua textura, cor e cheiro, e depois divertiram-se plantando suculentas e montando o terrário.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-6 d-flex justify-content-center align-content-center">
+                <img class="img-fluid col-xxl-8" src="imagens/projeto2.png" alt="Imagem de um aluno brincando com um cachorro.">
+            </div>
+            <div class="row col-xl-6 mt-5 mb-5 d-flex align-content-center justify-content-center">
+                <h1 id="subtitulo" class="mb-5 d-flex justify-content-center">
+                    Contato com animais:
+                </h1>
+                <div id="texto">
+                    <p id="paragrafo">As turmas do projeto Semear têm vivenciado a Cinoterapia com Aurea Nagamine e juntamente com os cães Thor e Benjamin, que proporcionam aos assistidos uma maior interação, alegria, melhoria na coordenação motora, bem estar, carinho, diversão e muito amor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-6 d-flex justify-content-center align-content-center">
+                <img class="img-fluid col-xxl-8" src="imagens/projeto3.png" alt="Imagem de um aluno fazendo uma pizza.">
+            </div>
+            <div class="row col-xl-6 mt-5 mb-5 d-flex align-content-center justify-content-center">
+                <h1 id="subtitulo" class="mb-5 d-flex justify-content-center">
+                    Cozinha Pedagógica:
+                </h1>
+                <div id="texto">
+                    <p id="paragrafo">Os alunos das Professoras Ana Paula e Isabela participaram da Cozinha Pedagógica e fizeram uma pizza deliciosa! Cada aluno montou a sua e ajudaram também a cortar os tomates. Eles gostaram muito de participar desta atividade!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-xl-6 d-flex justify-content-center align-content-center">
+                <img class="img-fluid col-xxl-8" src="imagens/projeto4.png" alt="Imagem de vários alunos fazendo pintura.">
+            </div>
+            <div class="row col-xl-6 mt-5 mb-5 d-flex align-content-center justify-content-center">
+                <h1 id="subtitulo" class="mb-5 d-flex justify-content-center">
+                    Estimulando a criatividade:
+                </h1>
+                <div id="texto">
+                    <p id="paragrafo">Nas aulas de Artes Visuais com a Professora Clédina, os alunos realizaram a interpretação de um poema, transformando-o em uma pintura coletiva feita com tintas em tela.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <h1 id="titulo">Localização:</h1>
+            <div id="linha"></div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.881125220775!2d-46.57121392466734!3d-23.644427878742846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1701119064671!5m2!1spt-BR!2sbr" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
-    <main class="row col-12 pt-5 ps-5 pd-5">
-        <main class=" col-xl-6 col-12" style="
-          max-width: 100%;
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.25em;
-          color: #000000;">
-            <p >Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente, sem fins lucrativos que atende crianças e adolescentes com deficiência intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade. Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do Espectro Autista). </p>
-            <p>Nosso trabalho se baseia nas diversas formas de linguagem, usando educação, arte, tecnologia, cultura e o lúdico como estratégias para prover o aprendizado, desenvolvimento e formação dos alunos.</p>
-        </main>
-        <main class="col-xl-6 col-12 d-flex justify-content-center align-content-center">
-          <img class="col-12" src="imagens/equipe.png" alt="Imagem da equipe da instituição O Semeador">
-        </main>  
-    </main>
-    <main class="col-12 pt-5 ps-5" style="max-width: 100%;">
-        <h1 class="texto col-12 pb-2" style="
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 900;
-          font-size: 48px;
-          line-height: 30px;
-          color: #002653;
-          ">Projetos:</h1>
-        <main class="Linha" style="
-            width: 130px;
-            height: 6px;
-            left: 67px;
-            top: 88px;
-            background: linear-gradient(225deg, #440099 0%, #440099 100%);
-        "></main>
-    </main>
-    <main class="row col-12 pt-5 ps-5 pd-5 pb-5">
-        <main class="col-xl-6 col-12 d-flex justify-content-center align-content-center">
-            <img class="col-12 img-fluid pb-5" src="imagens/projeto1.png" alt="Imagem de uma turma do Ensino Fundamental" style="width: 568px;
-            height: 503px;">
-        </main> 
-        <main class="row col-xl-6 col-12 ps-5 pd-5 d-flex align-content-center justify-content-center">
-            <h1 class=" col-12 pb-5" style="
-            left: 33px;
-            top: 23px;
-            font-family: 'Zabal DEMO';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 30px;
-            color: #002653;
-            ">Interação com a natureza:</h1>
-          <main class="col-12" style="
-          max-width: 100%;
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.25em;
-          color: #000000;">
-            <p >  Para trabalhar o terceiro elemento, a terra, a Professora Isabela trouxe como proposta a montagem de um terrário! As alunas puderam manusear um pouco da terra observando sua textura, cor e cheiro, e depois divertiram-se plantando suculentas e montando o terrário.</p>
-          </main>
-        </main>
-    </main>
-    <main class="row col-12 pt-5 ps-5 pd-5 pb-5">
-        <main class="col-xl-6 col-12 d-flex justify-content-center align-content-center">
-            <img class="col-12 img-fluid pb-5" src="imagens/projeto2.png" alt="Imagem de uma turma do Ensino Fundamental" style="width: 568px;
-            height: 503px;">
-        </main> 
-        <main class="row col-xl-6 col-12 ps-5 pd-5 d-flex align-content-center justify-content-center">
-            <h1 class=" col-12 pb-5" style="
-            left: 33px;
-            top: 23px;
-            font-family: 'Zabal DEMO';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 30px;
-            color: #002653;
-            ">Contato com animais:</h1>
-          <main class="col-12" style="
-          max-width: 100%;
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.25em;
-          color: #000000;">
-            <p >  As turmas do projeto Semear têm vivenciado a Cinoterapia com Aurea Nagamine e juntamente com os cães Thor e Benjamin, que proporcionam aos assistidos uma maior interação, alegria, melhoria na coordenação motora, bem estar, carinho, diversão e muito amor.</p>
-          </main>
-        </main>
-    </main>
-    <main class="row col-12 pt-5 ps-5 pd-5 pb-5">
-        <main class="col-xl-6 col-12 d-flex justify-content-center align-content-center">
-            <img class="col-12 img-fluid pb-5" src="imagens/projeto3.png" alt="Imagem de uma turma do Ensino Fundamental" style="width: 568px;
-            height: 503px;">
-        </main> 
-        <main class="row col-xl-6 col-12 ps-5 pd-5 d-flex align-content-center justify-content-center">
-            <h1 class=" col-12 pb-5" style="
-            left: 33px;
-            top: 23px;
-            font-family: 'Zabal DEMO';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 30px;
-            color: #002653;
-            ">Cozinha Pedagógica:</h1>
-          <main class="col-12" style="
-          max-width: 100%;
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.25em;
-          color: #000000;">
-            <p >  Os alunos das Professoras Ana Paula e Isabela participaram da Cozinha Pedagógica e fizeram uma pizza deliciosa! Cada aluno montou a sua e ajudaram também a cortar os tomates. Eles gostaram muito de participar desta atividade!</p>
-          </main>
-        </main>
-    </main>
-    <main class="row col-12 pt-5 ps-5 pd-5 pb-5">
-        <main class="col-xl-6 col-12 d-flex justify-content-center align-content-center">
-            <img class="col-12 img-fluid pb-5" src="imagens/projeto4.png" alt="Imagem de uma turma do Ensino Fundamental" style="width: 568px;
-            height: 503px;">
-        </main> 
-        <main class="row col-xl-6 col-12 ps-5 pd-5 d-flex align-content-center justify-content-center">
-            <h1 class=" col-12 pb-5" style="
-            left: 33px;
-            top: 23px;
-            font-family: 'Zabal DEMO';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 30px;
-            color: #002653;
-            ">Estimulando a criatividade:</h1>
-          <main class="col-12" style="
-          max-width: 100%;
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 1.25em;
-          color: #000000;">
-            <p >  Nas aulas de Artes Visuais com a Professora Clédina, os alunos realizaram a interpretação de um poema, transformando-o em uma pintura coletiva feita com tintas em tela.</p>
-          </main>
-        </main>
-    </main>
-    <main class="col-12 pt-5 ps-5" style="max-width: 100%;">
-        <h1 class="texto col-12 pb-2" style="
-          font-family: 'Zabal DEMO';
-          font-style: normal;
-          font-weight: 900;
-          font-size: 48px;
-          line-height: 30px;
-          color: #002653;
-          ">Localização: </h1>
-        <main class="Linha" style="
-          width: 221px;
-          height: 5px;
-          left: 0px;
-          top: 78px;
-          background: linear-gradient(225deg, #440099 0%, #440099 100%);
-        "></main>
-    </main>
-    <main class="container-xxl">
-      <main class="row mt-5 mb-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.881125220775!2d-46.57121392466734!3d-23.644427878742846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1701119064671!5m2!1spt-BR!2sbr" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </main>
-    </main>
-    </div>
-    <footer class="container-fluid pt-5 pb-5" style="background-color: #002653;">
-        <footer class=" row col-12 pt-5 d-flex justify-content-between">
-          <footer class="col-xl-4 col-9 ps-5" style="color: white;">
-            &copy2023 O Semeador Escola Metodista - AMAS
-          </footer>
-          <footer class="col-4 ps-5 justify-content-start d-none d-xl-flex">
-            <footer class="links ps-5 " style="color: white;">
-              Links:
-              <a class="pt-3" href="homePage.html">Início</a>
-              <a class="pt-1" href="escola.html">A Escola</a>
-              <a class="pt-1" href="ensino.html">Ensino</a>
-              <a class="pt-1" href="voluntario.html">Semeador Voluntário</a>
-              <a class="pt-1" href="doacoes.html">Doações</a>
-              <a class="pt-1" href="matricula.html">Matrícula</a>
-              <a class="pt-1" href="contato.html">Fale Conosco</a>
-              <a class="pt-1" href="colaborador.html">Colaborador</a>
-            </footer>
-          </footer>
-          <footer class=" col-4 pe-5 d-none d-xl-flex">
-            <footer class="links pe-5" style="color: white;">
-              <footer class="pt-3">Endereço</footer>
-              <footer class="pt-3">Rua dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, Brasil</footer>
-              <footer class="pt-3">Contato:</footer>
-              <footer class="pt-3">(11) 4238-3100</footer>
-              <footer class="pt-3">(11) 4238-9511</footer>
-            </footer>
-          </footer>
-          <nav class=" col-xl-12 col-3 ps-5 d-flex justify-content-end">
-            <a href="https://www.facebook.com/escolaosemeador/?locale=pt_BR"><img src="imagens/face.png" alt="Facebook" style="width: 40px;"></a>
-            <a href="https://www.instagram.com/metodistaosemeador/"><img class="" src="imagens/insta.png" alt="Instagram" style="width: 40px;"></a>
-          </nav>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.navbar-toggler').click(function(){
-                    $('.collapse').collapse('toggle');
-                });
-            });
-        </script>
+    <!-- Fim do corpo da pagina -->
+    <!-- Rodapé -->
+    <footer id="rodape" class="container-fluid">
+        <div class="row col-12 pt-5 pb-5 d-flex justify-content-between">
+            <div id="direitos" class="col-xl-4 ps-4">
+                &copy2023 O Semeador Escola Metodista - AMAS
+            </div>
+            <div class="col-4 justify-content-start d-none d-xl-flex">
+                <div class="links ms-5">
+                    Links:
+                    <a id="link" class="mt-3" href="homePage.html">Início</a>
+                    <a id="link" class="mt-1" href="escola.html">Escola</a>
+                    <a id="link" class="mt-1" href="ensino.html">Ensino</a>
+                    <a id="link" class="mt-1" href="voluntario.html">Voluntário</a>
+                    <a id="link" class="mt-1" href="doacoes.html">Doações</a>
+                    <a id="link" class="mt-1" href="matricula.html">Matrícula</a>
+                    <a id="link" class="mt-1" href="contato.html">Contato</a>
+                    <a id="link" class="mt-1" href="colaborador.html">Área Restrita</a>
+                </div>
+            </div>
+            <div class=" col-4 pe-5 d-none d-xl-flex">
+                <div class="links me-5">
+                  <div class="mt-3">Endereço</div>
+                  <div class="mt-3">Rua dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, Brasil</div>
+                  <div class="mt-3">Contato:</div>
+                  <div class="mt-3">(11) 4238-3100</div>
+                  <div class="mt-3">(11) 4238-9511</div>
+            </div>
+        </div>
+        <div class=" col-xl-12 col-3 ps-5 d-flex justify-content-end">
+          <nav class="ms-5 me-5 col-1 d-flex justify-content-center align-content-center d-none d-xxl-flex">
+            <a href="https://www.facebook.com/escolaosemeador/?locale=pt_BR">
+                <img id="sociais" src="imagens/face.png" alt="Ícone do Facebook">
+            </a>
+            <a href="https://www.instagram.com/metodistaosemeador/">
+                <img id="sociais" src="imagens/insta.png" alt="Ícone Instagram">
+            </a>
+        </nav>
+        </div>
+    </footer>
+    <!-- Fim do Rodapé -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

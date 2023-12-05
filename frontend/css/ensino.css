@@ -1,0 +1,33 @@
+#titulo {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: #002653;
+}
+#linha{
+    width: 140px;
+    height: 5px;
+    left: 7px;
+    top: 67px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#subtitulo {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #002653;
+}
+#texto{
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #000000;
+}
+#paragrafo {
+    text-indent: 2em;
+}

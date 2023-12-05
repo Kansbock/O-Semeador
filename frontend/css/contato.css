@@ -1,0 +1,31 @@
+#titulo {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 30px;
+    color: #002653;
+}
+#linha {
+    width: 123px;
+    height: 4px;
+    left: 0px;
+    top: 78px;
+    background: linear-gradient(225deg, #440099 0%, #440099 100%);
+}
+#icone {
+    width: 35px;
+    height: auto;
+}
+#texto {
+    font-family: 'Zabal DEMO';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
+@media screen and (max-width: 1200px) {
+    #texto {
+        font-size: 15px; 
+    }
+}
